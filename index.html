@@ -1,34 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My first website</title>
+  <title>Game-hub</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background-color: #F0F5FA">
 <nav>
-    <a href="index.html"><img src="images/GameHub_Logo_120.png" alt="Game Hub Logo"></a>
+  <a href="index.html"><img src="images/GameHub_Logo_120.png" alt="Game Hub Logo"></a>
   <div>
-  <ul class="nav-links">
-    <li><a href="allgames.html">Browse all games</a></li>
-    <li><a href="sellgames.html">Sell a game</a></li>
-  </ul>
+    <ul class="nav-links">
+      <li><a href="allgames.html">Browse all games</a></li>
+      <li><a href="sellgames.html">Sell a game</a></li>
+    </ul>
   </div>
   <div>
-    <button class="shopping-cart-btn">ShoppingCart</button>
+    <button class="shopping-cart-button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-cart"
+           viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>
+    </button>
   </div>
 </nav>
 <main>
   <section>
     <h2>Latest new games</h2>
-    <p>New games scrollbar</p>
+    <div class="game-scroll">
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers.jpg" />
+        <div class="game-info">
+          <h2>Ping Pong</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers2.jpg" />
+        <div class="game-info">
+          <h2>Super Duper</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers3.jpg" />
+        <div class="game-info">
+          <h2>Black</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers4.jpg" />
+        <div class="game-info">
+          <h2>Furious</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
   <section>
     <h2>Latest used games</h2>
-    <p>Used games scrollbar</p>
+    <div class="game-scroll">
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers.jpg" />
+        <div class="game-info">
+          <h2>Ping Pong</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers2.jpg" />
+        <div class="game-info">
+          <h2>Super Duper</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers3.jpg" />
+        <div class="game-info">
+          <h2>Black</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="game-card">
+        <img alt="game cover image" class="game-cover-image" src="images/GameHub_covers4.jpg" />
+        <div class="game-info">
+          <h2>Furious</h2>
+          <div class="game-text">
+            <p>A game about having fun and be with friends.</p>
+          </div>
+          <div class="cta-area">
+            <button class="cta-button">Buy</button>
+            <button class="cta-button">Read More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 <footer>
-  Footer here
+  <ul class="nav-links">
+    <li><a href="allgames.html">About us</a></li>
+    <li><a href="sellgames.html">Contact us</a></li>
+  </ul>
 </footer>
 <script src="js/script.js"></script>
 </body>
