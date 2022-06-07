@@ -13,8 +13,18 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 700px) {
-    .nav-links {
+@media only screen and (max-width: 850px) {
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hamburger {
+
+    }
+    .desktop-nav-links {
         display: none;
     }
 }
@@ -123,6 +133,33 @@ section {
     height: 3em;
     border-radius: 50%;
     color: #F0F5FA;
+}
+
+.hamburger > svg {
+    width: 36px;
+    height: 36px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.mobile-nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.side-menu:checked ~ .mobile-nav-links{
+    display: flex;
 }
 
 footer {
