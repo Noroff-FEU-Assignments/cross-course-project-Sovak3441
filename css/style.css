@@ -1,32 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('http://fonts.cdnfonts.com/css/neuropol-x');
+@font-face { font-family: Silom; src: url('https://www.mediafont.com/storage/contents/11617/font.eot'); /* IE */ src: local('Silom'), url('https://www.mediafont.com/storage/contents/11617/SilomBol.ttf'); /* non-IE */ }
+
+
 * {
 margin: 0;
 padding: 0;
 border: 0;
 }
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+:root {
+    --button-box-shadow: 0px 4px 0px #ABABAB, 0px 4px 10px #222222;
+}
 
 body {
     margin-left: 25px;
     margin-right: 25px;
     max-width: 100%;
-    overflow: hidden;
-}
-
-@media only screen and (max-width: 850px) {
-    body {
-        margin-left: 5px;
-        margin-right: 5px;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .hamburger {
-
-    }
-    .desktop-nav-links {
-        display: none;
-    }
+    background-color: #F0F5FA;
+    #overflow: hidden;
 }
 
 nav {
@@ -40,24 +32,24 @@ nav {
 }
 
 h1 {
-    font-family: "Silom", Times, serif;
+    font-family: "Silom", Times, sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
 }
 
 h2 {
-    font-family: "Myanmar MN", Times, serif;
+    font-family: "Myanmar MN", Times, sans-serif;
     font-size: 1.875rem;
     font-weight: bold;
 }
 
 p {
-    font-family: "Helvetica", Times, serif;
+    font-family: "Helvetica", Times, sans-serif;
     font-size: 1.375rem;
 }
 
 a {
-    font-family: "Neuropol X", Times, serif;
+    font-family: "Neuropol X", Times, sans-serif;
     font-size: 1.25rem;
 }
 
@@ -92,6 +84,8 @@ section {
     background-color: #1B203D;
     width: 7em;
     border-radius: 50%;
+    box-shadow: var(--button-box-shadow);
+    transition: all 0.2 ease;
 }
 
 .shopping-cart-button > svg {
@@ -125,6 +119,11 @@ section {
 
 .cta-area {
     margin-top: 15px;
+
+}
+
+.cta-area > a {
+    font-size: 0.7em;
 }
 
 .cta-button  {
@@ -133,6 +132,17 @@ section {
     height: 3em;
     border-radius: 50%;
     color: #F0F5FA;
+    box-shadow: var(--button-box-shadow);
+    transition: all 0.2 ease;
+}
+
+button:hover {
+    background-color: #2A3261;
+}
+
+button:active {
+    box-shadow: none;
+    top: 8px;
 }
 
 .hamburger > svg {
@@ -141,7 +151,7 @@ section {
 }
 
 .hamburger {
-    display: block;
+    display: none;
     cursor: pointer;
     float: right;
     padding: 40px 20px;
@@ -162,6 +172,17 @@ section {
     display: flex;
 }
 
+.cart-badge {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    margin-left: -5px;
+    margin-top: -5px;
+    text-align: center;
+    border-radius: 50%;
+}
+
 footer {
     position:absolute;
     bottom:0;
@@ -172,4 +193,19 @@ footer {
 
 .mobile-menu {
     display: block;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .desktop-nav-links {
+        display: none;
+    }
 }
