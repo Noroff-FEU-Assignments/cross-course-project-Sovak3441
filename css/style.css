@@ -17,6 +17,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     max-width: 100%;
+    min-height: 100%;
     background-color: #F0F5FA;
     overflow-x: hidden;
 }
@@ -212,10 +213,10 @@ button:active {
 }
 
 footer {
-    position:absolute;
-    bottom:0;
+    clear: both;
+    position: relative;
     width:100%;
-    height:60px;   /* Height of the footer */
+    height:60px;
     border-top: 1px dotted #1B203D;
 }
 
