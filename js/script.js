@@ -23,7 +23,6 @@ form.addEventListener("submit", (e) => {
     error.push("Please provide a Name of 5 characters or more");
   }
   if (!validMail(emailInput.value)) {
-    console.log(validMail(emailInput.value));
     error.push("Please provide an valid e-mail address");
   }
   if (subjectInput.value.length <= 5) {
