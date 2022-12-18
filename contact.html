@@ -52,6 +52,8 @@
   </ul>
 </div>
 <main>
+  <section class="errorSection">
+  </section>
   <section>
     <h1>Contact Us</h1>
     <p>Please do not hesitate to reach out to us with any issues, concerns, ideas, or just a few well choosen words to
@@ -61,27 +63,27 @@
     <form id="contact-form" method="post">
       <div class="form-input">
         <label for="name">Name: </label>
-        <input id="name" type="text" value="My Full Name" readonly/>
+        <input id="name" type="text" value="My Full Name" required />
       </div>
       <div class="form-input">
         <label for="e-mail">E-mail: </label>
-        <input id="e-mail" type="text" value="my@name.no" readonly/>
+        <input id="e-mail" type="text" value="my@name.no" required />
       </div>
       <div class="form-input">
         <label for="subject">Subject: </label>
-        <input id="subject" type="text" value="What a great service" readonly/>
+        <input id="subject" type="text" value="What a great service" required />
       </div>
       <div class="form-input">
         <label for="message">Message: </label>
-        <textarea id="message" readonly>
+        <textarea id="message" required>
           Thank you for a great service. Finnally a good place to buy and sell games!
 
           Regards
           My Name
         </textarea>
       </div>
+      <input type="submit" name="submit" class="cta-button" value="Send" />
     </form>
-    <a href="contactrecived.html"><button class="cta-button">Send Message</button></a>
   </section>
 </main>
 <footer>
