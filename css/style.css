@@ -1,317 +1,324 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 @import url('http://fonts.cdnfonts.com/css/neuropol-x');
-@font-face { font-family: Silom; src: url('https://www.mediafont.com/storage/contents/11617/font.eot'); /* IE */ src: local('Silom'), url('https://www.mediafont.com/storage/contents/11617/SilomBol.ttf'); /* non-IE */ }
+
+@font-face {
+  font-family: Silom;
+  src: url('https://www.mediafont.com/storage/contents/11617/font.eot'); /* IE */
+  src: local('Silom'), url('https://www.mediafont.com/storage/contents/11617/SilomBol.ttf'); /* non-IE */
+}
 
 
 * {
-margin: 0;
-padding: 0;
-border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 :root {
-    --button-box-shadow: 0px 4px 0px #ABABAB, 0px 4px 10px #222222;
+  --button-box-shadow: 0px 4px 0px #ABABAB, 0px 4px 10px #222222;
+  --max-page-width: 1920px;
 }
 
 body {
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 100%;
-    min-height: 100%;
-    background-color: #F0F5FA;
-    overflow-x: hidden;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 100%;
+  min-height: 100%;
+  background-color: hsl(240, 5%, 65%);
+  overflow-x: hidden;
+}
+
+main {
+  max-width: var(--max-page-width);
+  margin: 0 auto;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 120px;
-    border-bottom: 1px dotted #1B203D;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  max-width: var(--max-page-width);
+  border-bottom: 1px dotted #1B203D;
+  margin: 10px auto 25px;
 }
 
 h1 {
-    font-family: "Silom", Times, sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-family: "Silom", Times, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-family: "Myanmar MN", Times, sans-serif;
-    font-size: 1.875rem;
-    font-weight: bold;
+  font-family: "Myanmar MN", Times, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
 }
 
 p {
-    font-family: "Helvetica", Times, sans-serif;
-    font-size: 1.375rem;
+  font-family: "Helvetica", Times, sans-serif;
+  font-size: 1.375rem;
 }
 
 a {
-    font-family: "Neuropol X", Times, sans-serif;
-    font-size: 1.25rem;
+  font-family: "Neuropol X", Times, sans-serif;
+  font-size: 1.25rem;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: #1B203D;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  display: block;
+  color: #1B203D;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-    color: #009DF5;
+  color: #009DF5;
 }
 
 section {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .shopping-cart-button {
-    background-color: #1B203D;
-    width: 7em;
-    border-radius: 50%;
-    box-shadow: var(--button-box-shadow);
-    transition: all 0.2 ease;
+  background-color: #1B203D;
+  width: 7em;
+  border-radius: 50%;
+  box-shadow: var(--button-box-shadow);
+  transition: all 0.2 ease;
 }
 
 .shopping-cart-button > svg {
-    width: 32px;
-    height: 32px;
-    fill: #F0F5FA;
+  width: 32px;
+  height: 32px;
+  fill: #F0F5FA;
 }
 
 .game-card {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    border-right: aquamarine 1px dotted;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  #border-right: aquamarine 1px dotted;
 }
 
 .game-card-details {
-    display: flex;
-    flex-direction: row;
-    border-right: aquamarine 1px dotted;
+  display: flex;
+  flex-direction: row;
+  #border-right: aquamarine 1px dotted;
 }
 
 .game-info {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .game-text {
-    width: 200px;
+  width: 200px;
 }
 
 .game-card-details .game-text {
-    width: auto;
+  width: auto;
 }
 
 .game-scroll {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .game-cover-image {
-    height: 200px;
+  height: 200px;
 }
 
 .game-cover-image-details {
-    height: 400px;
+  height: 400px;
 }
 
 .cta-area {
-    margin-top: 15px;
+  margin-top: 15px;
 
 }
 
 .cta-area > a {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
-.cta-button  {
-    background-color: #1B203D;
-    width: 6em;
-    height: 3em;
-    border-radius: 50%;
-    color: #F0F5FA;
-    box-shadow: var(--button-box-shadow);
-    transition: all 0.2 ease;
-    margin-right: 3px;
+.cta-button {
+  background-color: #1B203D;
+  width: 6em;
+  height: 3em;
+  border-radius: 50%;
+  color: #F0F5FA;
+  box-shadow: var(--button-box-shadow);
+  transition: all 0.2 ease;
+  margin-right: 3px;
 }
 
 button:hover {
-    background-color: #2A3261;
+  background-color: #2A3261;
 }
 
 button:active {
-    box-shadow: none;
-    top: 8px;
+  box-shadow: none;
+  top: 8px;
 }
 
 .hamburger > svg {
-    width: 36px;
-    height: 36px;
+  width: 36px;
+  height: 36px;
 }
 
 .hamburger {
-    display: none;
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
 }
 
 .side-menu {
-    display: none;
+  display: none;
 }
 
 .mobile-nav-links {
-    flex-direction: column;
-    width: 300px;
-    background-color: lightgray;
+  flex-direction: column;
+  width: 300px;
+  background-color: lightgray;
 }
 
 #mobile-links-menu {
-    display: none;
+  display: none;
 }
 
-.side-menu:checked .mobile-nav-links{
-    display: flex;
+.side-menu:checked .mobile-nav-links {
+  display: flex;
 }
 
 .cart-badge {
-    position: absolute;
-    background-color: red;
-    color: white;
-    padding: 2px 5px;
-    margin-left: -5px;
-    margin-top: -5px;
-    text-align: center;
-    border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  margin-left: -5px;
+  margin-top: -5px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 .warning {
-    color: red;
+  color: red;
 }
 
 .success {
-    color: green;
+  color: green;
 }
 
 footer {
-    clear: both;
-    position: relative;
-    width:100%;
-    height:60px;
-    border-top: 1px dotted #1B203D;
+  bottom: 0;
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+  height: 60px;
+  border-top: 1px dotted #1B203D;
 }
 
 .mobile-menu {
-    display: block;
+  display: block;
 }
 
 .form-input {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 input[type=text] {
-    width: 95%;
-    height: 16px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+  width: 95%;
+  height: 16px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 form textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
 }
 
 form label {
-    font-family: "Helvetica", Times, sans-serif;
-    font-size: 1.3rem;
-    width: 15%;
+  font-family: "Helvetica", Times, sans-serif;
+  font-size: 1.3rem;
+  width: 15%;
 }
 
 .table {
-    background-color: lightgray;
-    font-size: 1.365rem;
-    width: 100%;
-    text-align: left;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  background-color: lightgray;
+  font-size: 1.365rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .table-head-row {
-    border: #1B203D 1px solid;
+  border: #1B203D 1px solid;
 }
 
 .radio-button {
-    margin-right: 2.5em;
+  margin-right: 2.5em;
 }
 
 .checkout-button {
-    width: 10em;
-    height: 5em;
-    justify-self: center;
+  width: 10em;
+  height: 5em;
+  justify-self: center;
 }
 
 @media only screen and (max-width: 850px) {
-    body {
-        margin-left: 5px;
-        margin-right: 5px;
-        max-width: 100%;
-    }
+  body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
-    .hamburger {
-        display: block;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .desktop-nav-links {
-        display: none;
-    }
+  .desktop-nav-links {
+    display: none;
+  }
 
-    .game-scroll {
-        flex-direction: column;
-    }
+  .game-scroll {
+    flex-direction: column;
+  }
 
-    .game-card-details {
-        flex-direction: column;
-        border-right: aquamarine 1px dotted;
-    }
+  .game-card-details {
+    flex-direction: column;
+    border-right: aquamarine 1px dotted;
+  }
 
-    .game-card-details .game-text p {
-        margin: auto;
-    }
+  .game-card-details .game-text p {
+    margin: auto;
+  }
 
-    .game-cover-image-details {
-        max-width: 400px;
-        margin: auto;
-    }
-
-    footer {
-        display: none;
-    }
+  .game-cover-image-details {
+    max-width: 400px;
+    margin: auto;
+  }
 }
