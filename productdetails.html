@@ -50,7 +50,9 @@
 </div>
 </header>
 <main>
-  <section>
+  <section id="product_details_container">
+    <p>Loading data! Please wait</p>
+    <!--
     <h1>Product Details</h1>
     <h2>Super Duper</h2>
 
@@ -63,6 +65,7 @@
         </div>
 
       </div>
+      -->
   </section>
   <section>
     <a href="checkout.html"><button  class="cta-button">Buy</button></a>
@@ -77,5 +80,11 @@
   </ul>
 </footer>
 <script src="js/script.js"></script>
+<script>
+  let params = (new URL(document.location)).searchParams;
+  let pid = params.get("pid");
+
+  usefetchDetails(pid);
+</script>
 </body>
 </html>
